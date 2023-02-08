@@ -25,6 +25,9 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(244, 237, 193);</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QGroupBox" name="groupBox">
@@ -40,22 +43,47 @@
        <height>150</height>
       </size>
      </property>
+     <property name="font">
+      <font>
+       <family>Lucida Bright</family>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(252, 255, 230);</string>
+     </property>
      <property name="title">
       <string>Registrarse</string>
      </property>
      <layout class="QFormLayout" name="formLayout">
       <item row="0" column="0">
        <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <family>Lucida Bright</family>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Nombre de Usuario: </string>
         </property>
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="inNombre"/>
+       <widget class="QLineEdit" name="inNombre">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
       </item>
       <item row="1" column="0">
        <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <family>Lucida Bright</family>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Contraseña:</string>
         </property>
@@ -63,6 +91,9 @@
       </item>
       <item row="1" column="1">
        <widget class="QLineEdit" name="inContra">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
         </property>
@@ -70,6 +101,12 @@
       </item>
       <item row="2" column="0">
        <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Lucida Bright</family>
+          <bold>false</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Repetir contraseña: </string>
         </property>
@@ -77,6 +114,9 @@
       </item>
       <item row="2" column="1">
        <widget class="QLineEdit" name="inContraVeri">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
+        </property>
         <property name="echoMode">
          <enum>QLineEdit::Password</enum>
         </property>
@@ -105,9 +145,15 @@
        <widget class="QPushButton" name="Cancelar">
         <property name="minimumSize">
          <size>
-          <width>100</width>
-          <height>35</height>
+          <width>94</width>
+          <height>28</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lucida Bright</family>
+          <italic>false</italic>
+         </font>
         </property>
         <property name="styleSheet">
          <string notr="true">border: 1px solid rgb(24, 103, 155);
@@ -137,9 +183,14 @@ color: white;</string>
        <widget class="QPushButton" name="Guardar">
         <property name="minimumSize">
          <size>
-          <width>100</width>
-          <height>35</height>
+          <width>94</width>
+          <height>28</height>
          </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lucida Bright</family>
+         </font>
         </property>
         <property name="styleSheet">
          <string notr="true">border: 1px solid rgb(24, 103, 155);

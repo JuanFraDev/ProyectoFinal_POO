@@ -10,19 +10,31 @@ CONFIG += c++11
 
 SOURCES += \
     controlador.cpp \
+    edit_users.cpp \
     iniciodesesion.cpp \
     main.cpp \
+    movimientos.cpp \
+    nuevo_egre.cpp \
+    nuevo_ing.cpp \
     pagprincipal.cpp \
     register.cpp
 
 HEADERS += \
     controlador.h \
+    edit_users.h \
     iniciodesesion.h \
+    movimientos.h \
+    nuevo_egre.h \
+    nuevo_ing.h \
     pagprincipal.h \
     register.h
 
 FORMS += \
+    edit_users.ui \
     iniciodesesion.ui \
+    movimientos.ui \
+    nuevo_egre.ui \
+    nuevo_ing.ui \
     pagprincipal.ui \
     register.ui
 

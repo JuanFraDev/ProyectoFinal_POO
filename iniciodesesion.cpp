@@ -7,6 +7,7 @@ IniciodeSesion::IniciodeSesion(QWidget *parent) :
 {
     Controlador contr;
     ui->setupUi(this);
+    setWindowTitle("Inicio de sesion");
 }
 
 IniciodeSesion::~IniciodeSesion()
