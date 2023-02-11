@@ -66,13 +66,14 @@ bool Controlador::validReg(QString nuevoUsuario)
 
 void Controlador::setArchivo()
 {
-    QString usuarios = "usuarios.csv";
+    QString usuarios = "ProyectoFinal-Ahorro/build-ProytectoFinal-Ahorro-Desktop_Qt_5_15_2_MinGW_64_bit-Debug/usuarios.csv";
     QFileInfo infoFile(usuarios);
     if(infoFile.exists()){
         ARCHIVO = infoFile.absoluteFilePath();
         qDebug() << infoFile.absoluteFilePath();
     } else {
         QDir buildDir("ProyectoFinal-Ahorro/build-ProytectoFinal-Ahorro-Desktop_Qt_5_15_2_MinGW_64_bit-Debug");
+        qDebug() << "Llega";
         QDir::setCurrent(buildDir.path());
         QFile file("usuarios.csv");
         if(file.open(QIODevice::WriteOnly | QIODevice::Text)){
