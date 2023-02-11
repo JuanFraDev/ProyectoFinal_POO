@@ -9,6 +9,7 @@
 #include <QMessageBox>
 #include <QTableWidgetItem>
 #include <QFileInfo>
+#include <QList>
 
 class Controlador : public QObject
 {
@@ -22,7 +23,6 @@ public:
 
 private:
     QString ARCHIVO;
-
 signals:
 
 };

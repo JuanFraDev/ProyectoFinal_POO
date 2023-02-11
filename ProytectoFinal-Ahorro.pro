@@ -16,6 +16,7 @@ SOURCES += \
     movimientos.cpp \
     nuevo_egre.cpp \
     nuevo_ing.cpp \
+    nuevoedituser.cpp \
     pagprincipal.cpp \
     register.cpp
 
@@ -26,6 +27,7 @@ HEADERS += \
     movimientos.h \
     nuevo_egre.h \
     nuevo_ing.h \
+    nuevoedituser.h \
     pagprincipal.h \
     register.h
 
@@ -35,6 +37,7 @@ FORMS += \
     movimientos.ui \
     nuevo_egre.ui \
     nuevo_ing.ui \
+    nuevoedituser.ui \
     pagprincipal.ui \
     register.ui
 
