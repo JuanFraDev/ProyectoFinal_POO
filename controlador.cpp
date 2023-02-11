@@ -38,7 +38,7 @@ bool Controlador::iniciarSesion(QString datos)
 
 bool Controlador::registrarse(QString verificacion, QString nuevoUsuario)
 {
-
+    setArchivo();
     QStringList contras = verificacion.split(";");
     if(!(contras[0] == contras[1])){
         return 0;
@@ -72,6 +72,12 @@ void Controlador::setArchivo()
         ARCHIVO = infoFile.absoluteFilePath();
         qDebug() << infoFile.absoluteFilePath();
     } else {
-        qDebug() << "El archivo no existe";
+        QDir buildDir("ProyectoFinal-Ahorro/build-ProytectoFinal-Ahorro-Desktop_Qt_5_15_2_MinGW_64_bit-Debug");
+        QDir::setCurrent(buildDir.path());
+        QFile file("usuarios.csv");
+        if(file.open(QIODevice::WriteOnly | QIODevice::Text)){
+            file.close();
+        }
+        setArchivo();
     }
 }
