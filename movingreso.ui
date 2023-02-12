@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Movimientos</class>
- <widget class="QDialog" name="Movimientos">
+ <class>MovIngreso</class>
+ <widget class="QDialog" name="MovIngreso">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>866</width>
-    <height>477</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">

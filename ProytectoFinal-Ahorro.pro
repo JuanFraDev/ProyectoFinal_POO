@@ -13,7 +13,8 @@ SOURCES += \
     edit_users.cpp \
     iniciodesesion.cpp \
     main.cpp \
-    movimientos.cpp \
+    movegreso.cpp \
+    movingreso.cpp \
     nuevo_egre.cpp \
     nuevo_ing.cpp \
     nuevoedituser.cpp \
@@ -24,7 +25,8 @@ HEADERS += \
     controlador.h \
     edit_users.h \
     iniciodesesion.h \
-    movimientos.h \
+    movegreso.h \
+    movingreso.h \
     nuevo_egre.h \
     nuevo_ing.h \
     nuevoedituser.h \
@@ -34,7 +36,8 @@ HEADERS += \
 FORMS += \
     edit_users.ui \
     iniciodesesion.ui \
-    movimientos.ui \
+    movegreso.ui \
+    movingreso.ui \
     nuevo_egre.ui \
     nuevo_ing.ui \
     nuevoedituser.ui \
