@@ -11,7 +11,6 @@ Edit_users::Edit_users(QWidget *parent) :
     QStringList titulo;
     titulo << "Nombre" << "Apellido" << "Ingreso" << "Egreso";
     ui->tblUsuarios->setHorizontalHeaderLabels(titulo);
-    nuevoEditUser neu;
 }
 
 Edit_users::~Edit_users()
@@ -53,6 +52,8 @@ void Edit_users::on_addUser_clicked()
     if (res == QDialog::Rejected){
         return;
     }
+    ui->tblUsuarios->clearContents();
+    ui->tblUsuarios->setRowCount(0);
     QFile archivo(user.getARCHIVO_MIEMBRO());
     if (archivo.open(QFile::ReadOnly)) {
         QTextStream entrada(&archivo);

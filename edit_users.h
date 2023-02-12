@@ -20,7 +20,6 @@ public:
 private slots:
     void on_addUser_clicked();
     void on_eliminarUser_clicked();
-
     void on_editUser_clicked();
 
 private:

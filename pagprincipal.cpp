@@ -18,10 +18,7 @@ PagPrincipal::~PagPrincipal()
 void PagPrincipal::on_actionNuevo_miembro_triggered()
 {
     Edit_users users;
-
     users.cargarDatos();
-
-
     users.exec();
 
 }
