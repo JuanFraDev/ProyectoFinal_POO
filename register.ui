@@ -46,7 +46,8 @@
      <property name="font">
       <font>
        <family>Lucida Bright</family>
-       <bold>false</bold>
+       <pointsize>13</pointsize>
+       <bold>true</bold>
       </font>
      </property>
      <property name="styleSheet">
