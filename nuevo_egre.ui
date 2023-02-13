@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>480</width>
-    <height>465</height>
+    <width>700</width>
+    <height>750</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>480</width>
-    <height>465</height>
+    <width>700</width>
+    <height>750</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>480</width>
-    <height>465</height>
+    <width>700</width>
+    <height>750</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -34,6 +34,9 @@
     <spacer name="verticalSpacer_4">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>
@@ -95,6 +98,9 @@
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
@@ -139,13 +145,13 @@
           </widget>
          </item>
          <item row="0" column="1">
-          <widget class="QCalendarWidget" name="calendarWidget">
+          <widget class="QCalendarWidget" name="inFecha">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(164, 188, 255);</string>
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
+         <item row="1" column="0">
           <widget class="QLabel" name="label_2">
            <property name="font">
             <font>
@@ -158,7 +164,19 @@
            </property>
           </widget>
          </item>
-         <item row="6" column="0">
+         <item row="1" column="1">
+          <widget class="QComboBox" name="inMiembro">
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
           <widget class="QLabel" name="label_5">
            <property name="font">
             <font>
@@ -171,8 +189,8 @@
            </property>
           </widget>
          </item>
-         <item row="6" column="1">
-          <widget class="QDoubleSpinBox" name="doubleSpinBox">
+         <item row="2" column="1">
+          <widget class="QDoubleSpinBox" name="inMonto">
            <property name="font">
             <font>
              <family>Segoe UI</family>
@@ -183,7 +201,7 @@
            </property>
           </widget>
          </item>
-         <item row="8" column="0" colspan="2">
+         <item row="3" column="0">
           <widget class="QLabel" name="label_6">
            <property name="font">
             <font>
@@ -196,73 +214,8 @@
            </property>
           </widget>
          </item>
-         <item row="9" column="1">
-          <widget class="QRadioButton" name="radioButton">
-           <property name="font">
-            <font>
-             <family>Lucida Bright</family>
-            </font>
-           </property>
-           <property name="text">
-            <string>Alimentación</string>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="1">
-          <widget class="QRadioButton" name="radioButton_2">
-           <property name="font">
-            <font>
-             <family>Lucida Bright</family>
-            </font>
-           </property>
-           <property name="text">
-            <string>Arriendo</string>
-           </property>
-          </widget>
-         </item>
-         <item row="11" column="1">
-          <widget class="QRadioButton" name="radioButton_3">
-           <property name="font">
-            <font>
-             <family>Lucida Bright</family>
-            </font>
-           </property>
-           <property name="text">
-            <string>Servicios Básicos</string>
-           </property>
-          </widget>
-         </item>
-         <item row="12" column="1">
-          <widget class="QRadioButton" name="radioButton_4">
-           <property name="font">
-            <font>
-             <family>Lucida Bright</family>
-            </font>
-           </property>
-           <property name="text">
-            <string>Salud</string>
-           </property>
-          </widget>
-         </item>
-         <item row="13" column="1">
-          <widget class="QRadioButton" name="radioButton_5">
-           <property name="font">
-            <font>
-             <family>Lucida Bright</family>
-            </font>
-           </property>
-           <property name="text">
-            <string>Otros</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QComboBox" name="comboBox">
-           <property name="font">
-            <font>
-             <family>Segoe UI</family>
-            </font>
-           </property>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="inCategoria">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
@@ -295,6 +248,9 @@
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
      <property name="sizeHint" stdset="0">
       <size>
        <width>20</width>
@@ -308,43 +264,6 @@
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
        <spacer name="horizontalSpacer_5">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>40</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="Cancelar">
-        <property name="minimumSize">
-         <size>
-          <width>94</width>
-          <height>28</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">border: 1px solid rgb(24, 103, 155);
-border-radius: 5px;
-background-color: rgb(237, 51, 59);
-color: white;</string>
-        </property>
-        <property name="text">
-         <string>Cancelar</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="horizontalSpacer_6">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
@@ -383,6 +302,43 @@ color: white;
        </widget>
       </item>
       <item>
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Cancelar">
+        <property name="minimumSize">
+         <size>
+          <width>94</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Lucida Bright</family>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border: 1px solid rgb(24, 103, 155);
+border-radius: 5px;
+background-color: rgb(237, 51, 59);
+color: white;</string>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <spacer name="horizontalSpacer_7">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -402,6 +358,9 @@ color: white;
     <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
      </property>
      <property name="sizeHint" stdset="0">
       <size>

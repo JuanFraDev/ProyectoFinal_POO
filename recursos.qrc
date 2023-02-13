@@ -2,5 +2,13 @@
     <qresource prefix="/">
         <file>recursos/fondo.PNG</file>
         <file>recursos/usuario.png</file>
+        <file>recursos/categorias.png</file>
+        <file>recursos/disminucion.png</file>
+        <file>recursos/grupo.png</file>
+        <file>recursos/ingresos.png</file>
+        <file>recursos/presupuesto.png</file>
+        <file>recursos/idiomas.png</file>
+        <file>recursos/configuraciones.png</file>
+        <file>recursos/analitica.png</file>
     </qresource>
 </RCC>

@@ -20,6 +20,12 @@ public:
     bool registrarse(QString verificacion, QString nuevoUsuario);
     bool validReg(QString nuevoUsuario);
     void setArchivo();
+    void guardarCategoria(QString cate, QString nombre);
+    void guardarEgreso(QString fecha, QString miembro, float monto, QString categoria);
+    void guardarIngreso(QString fecha, QString miembro, float monto, QString categoria);
+    void eliminarEgreso(QString fecha, QString miembro, float monto, QString categoria);
+    void eliminarIngreso(QString fecha, QString miembro, float monto, QString categoria);
+    void eliminarMiembro(QString nombre, QString apellido, float ingreso, float egreso);
 
 private:
     QString ARCHIVO;

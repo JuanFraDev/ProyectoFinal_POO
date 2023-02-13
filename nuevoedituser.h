@@ -23,6 +23,8 @@ public:
 private slots:
     void on_Guardar_clicked();
 
+    void on_Cancelar_clicked();
+
 private:
     Ui::nuevoEditUser *ui;
     QString ARCHIVO_MIEMBRO;

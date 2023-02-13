@@ -36,7 +36,8 @@ void IniciodeSesion::on_btn_regis_clicked()
     Register reg(this);
     reg.setWindowTitle("Registro de nuevo Usuario");
     int res = reg.exec();
-    if (res == QDialog::Rejected){
+    if (res == QDialog::Rejected)
+    {
         return;
     }
 }
