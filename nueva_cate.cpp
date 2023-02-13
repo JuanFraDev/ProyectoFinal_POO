@@ -25,3 +25,10 @@ void Nueva_cate::on_Guardar_clicked()
     accept();
 }
 
+
+void Nueva_cate::on_Cancelar_clicked()
+{
+    rejected();
+    close();
+}
+

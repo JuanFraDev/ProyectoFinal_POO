@@ -351,3 +351,5 @@ void Controlador::eliminarMiembro(QString nombre, QString apellido, float ingres
         fileIngresos.close();
     }
 }
+
+

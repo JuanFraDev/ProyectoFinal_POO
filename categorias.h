@@ -22,6 +22,8 @@ public:
 private slots:
     void on_nuevo_cate_clicked();
 
+    void on_eliminar_cate_clicked();
+
 private:
     Ui::Categorias *ui;
     enum Columna

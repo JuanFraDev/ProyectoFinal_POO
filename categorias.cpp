@@ -62,3 +62,55 @@ void Categorias::on_nuevo_cate_clicked()
     cargar();
 }
 
+
+void Categorias::on_eliminar_cate_clicked()
+{
+    QString nom, tip;
+    QList <QModelIndex> big = ui->tblCate->selectionModel()->selectedRows();
+    if(big.isEmpty()){
+        QMessageBox::information(this,"Eliminacion","Seleccione una fila para poder eliminarla");
+        return;
+    }
+
+    QList<int> list;
+    QList <int> :: iterator x;
+    QList<QModelIndex>::iterator i;
+
+    for (auto &&i : big){
+        list.append(i.row());
+    }
+    for (auto &&x : list){
+        QTableWidgetItem *nombre = ui->tblCate->item(x, NOMBRE);
+        QTableWidgetItem *tipo = ui->tblCate->item(x, TIPO);
+
+        nom = nombre->text();
+        tip = tipo->text();
+        ui->tblCate->removeRow(x);
+    }
+
+    int filas = ui->tblCate->rowCount();
+
+    // Abrir el archivo y guardar
+    QFile archivo("catIngreso.csv");
+    if (archivo.open(QFile::WriteOnly | QFile::Text)) {
+        QTextStream salida(&archivo);
+        for (int i=0; i<filas; i++) {
+            QTableWidgetItem *nombre = ui->tblCate->item(i, NOMBRE);
+            QTableWidgetItem *tipo = ui->tblCate->item(i, TIPO);
+            salida << nombre->text() << ";" << tipo->text() << "\n";
+        }
+        archivo.close();
+    }
+    // Abrir el archivo y guardar
+    QFile archivo2("catEgreso.csv");
+    if (archivo.open(QFile::WriteOnly | QFile::Text)) {
+        QTextStream salida(&archivo2);
+        for (int i=0; i<filas; i++) {
+            QTableWidgetItem *nombre = ui->tblCate->item(i, NOMBRE);
+            QTableWidgetItem *tipo = ui->tblCate->item(i, TIPO);
+            salida << nombre->text() << ";" << tipo->text() << "\n";
+        }
+        archivo.close();
+    }
+}
+

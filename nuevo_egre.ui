@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="recursos.qrc">
+    <normaloff>:/recursos/presupuesto.png</normaloff>:/recursos/presupuesto.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(244, 237, 193);
 </string>
@@ -372,6 +376,8 @@ color: white;</string>
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
